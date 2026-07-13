@@ -1,0 +1,11 @@
+{
+  "id": "Darky_v1",
+  "title": "Darky",
+  "description": "Premium YouTube Music skin featuring a intense liquid glass search dropdown, and custom Apple UI tabs. Includes smart fullscreen.",
+  "creators": ["ankit008-mishra"],
+  "minVersion": "3.0.5.6",
+  "hasShaders": true,
+  "version": "1.0.0",
+  "tags": ["apple", "minimal", "glassmorphism"],
+  "images": ["1.webp" ]
+}
