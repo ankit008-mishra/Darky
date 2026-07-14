@@ -5,7 +5,7 @@
   "creators": ["ankit008-mishra"],
   "minVersion": "2.0.5.6",
   "hasShaders": true,
-  "version": "1.0.0",
+  "version": "1.1.2",
   "tags": ["apple", "minimal", "glassmorphism"],
-  "images": ["1.webp" ]
+  "images": ["1.webp"]
 }
