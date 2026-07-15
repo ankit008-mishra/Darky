@@ -6,9 +6,9 @@
 
 ## 📸 Screenshots
 
-![Darky Theme Preview](1.png)
+![Darky Theme Preview](images/1.png)
 
-![Darky Glass Details](1.webp)
+![Darky Glass Details](images/1.webp)
 
 ---
 
