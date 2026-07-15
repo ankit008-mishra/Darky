@@ -178,6 +178,7 @@ Darky-Theme/
 > I tried to implement a perfectly smooth scroll animation for the lyrics panel similar to native Apple Music, but I couldn't get the scroll interpolation to feel buttery smooth. The current implementation uses CSS transitions and blur filters which work well, but the auto-scroll snapping and momentum scrolling still feel slightly jittery compared to a true native app experience.
 >
 > If anyone knows a better way to handle smooth lyric scrolling with proper easing and no frame drops, contributions are welcome!
+> Fuckkkkkkkkkkkkk Cssssssssssssssss 
 
 ---
 
