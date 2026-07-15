@@ -53,50 +53,82 @@
 
 ## 🛠️ Installation
 
-### Method 1: Stylus Extension (Recommended)
+### For Users — Install via Better Lyrics Extension
 
+#### Method 1: Browse Themes (Recommended)
+1. Install the **Better Lyrics** extension for your browser
+2. Open the extension **Options** → **Themes** tab → **Browse Themes**
+3. Search for **"Darky"** and click **Install**
+
+#### Method 2: Install from URL
+1. Open the Better Lyrics extension **Options** → **Themes** tab
+2. Click **Install from URL**
+3. Paste your theme repository URL (or the direct CSS file URL)
+4. Click **Install** — no submission required!
+
+### For Developers — Manual Installation
+
+#### Option A: Stylus Extension
 1. **Install Stylus** browser extension:
    - [Chrome Web Store](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
    - [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+2. Open Stylus → Click **"Write new style"**
+3. Copy all code from `Darky_Animated.user.css`
+4. Paste into the Stylus editor
+5. Add this URL rule: `URLs on the domain` → `music.youtube.com`
+6. **Save** and visit [music.youtube.com](https://music.youtube.com)
 
-2. **Open Stylus** → Click **"Write new style"**
-
-3. **Add the CSS**:
-   - Copy all the code from `Darky_Animated.user.css`
-   - Paste it into the Stylus editor
-
-4. **Set the URL**:
-   - Add this rule: `URLs on the domain` → `music.youtube.com`
-
-5. **Save** and visit [music.youtube.com](https://music.youtube.com)
-
-### Method 2: UserScript Manager (Tampermonkey / Greasemonkey)
-
-1. Install **Tampermonkey** or **Greasemonkey** extension
+#### Option B: UserScript Manager (Tampermonkey)
+1. Install **Tampermonkey** extension
 2. Create a new userscript
 3. Paste the CSS inside a `GM_addStyle()` block
 4. Set `@match` to `https://music.youtube.com/*`
 5. Save and refresh YouTube Music
 
-### Method 3: Better Lyrics Extension (If submitting to store)
-
-1. Install the **Better Lyrics** extension
-2. Go to Extension Options → **Themes** tab
-3. Click **Install from URL** or **Browse Themes**
-4. Paste your theme repository URL
-5. Click Install
-
 ---
 
-## 📝 File Structure
+## 📁 Theme Structure
+
+If you want to fork or submit this theme to the Better Lyrics store, use this structure:
 
 ```
 Darky-Theme/
-├── Darky_Animated.user.css    # Main theme file
-├── README.md                   # This file
-├── 1.png                       # Screenshot 1 (PNG)
-└── 1.webp                      # Screenshot 2 (WebP)
+├── metadata.json          # Theme info (required for store)
+├── style.css              # Main CSS (same as .user.css)
+├── DESCRIPTION.md         # Rich description (optional)
+├── cover.png              # Cover image (optional)
+└── images/                # Screenshots (required)
+    ├── 1.png
+    └── 1.webp
 ```
+
+### metadata.json
+
+```json
+{
+  "id": "darky-premium",
+  "title": "Darky",
+  "description": "A sleek dark glass-morphism theme with Apple Music-inspired lyrics and smooth animations.",
+  "creators": ["ankit008-mishra"],
+  "minVersion": "2.0.5.6",
+  "hasShaders": false,
+  "version": "1.0.0",
+  "tags": ["dark", "glass", "apple-music", "animated", "minimal"],
+  "images": ["1.png", "1.webp"]
+}
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| id | Yes | Unique identifier (lowercase, hyphens allowed) |
+| title | Yes | Display name |
+| description | Yes | What your theme does |
+| creators | Yes | Array of GitHub usernames |
+| minVersion | Yes | Minimum Better Lyrics version required |
+| hasShaders | Yes | Whether theme includes shader.json |
+| version | Yes | Theme version (semver) |
+| tags | No | Searchable tags |
+| images | Yes | Filenames in the images/ folder |
 
 ---
 
